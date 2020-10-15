@@ -30,7 +30,7 @@ int main(int argc, char* argv[]) {
         StackNode node3 = {'C', };
         StackNode node4 = {'D', };
 
-        push(pStack, node1);
+        Wpush(pStack, node1);
         push(pStack, node2);
         push(pStack, node3);
         push(pStack, node4);
