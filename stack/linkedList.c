@@ -7,7 +7,7 @@ Stack* createStack() {
     Stack* pStack = NULL;
     pStack = (Stack *)malloc(sizeof(Stack));
     if(pStack != NULL) {
-        memset(pStack, 0, sizeof(pStack));
+        memset(pStack, 0, sizeof(Stack));
     }
     else {
         printf("오류, 메모리 할당, createStack()\n");
@@ -19,6 +19,7 @@ return pStack;
 int push(Stack* pStack, StackNode element) {
     int ret = FALSE;
     StackNode *pNode = NULL;
+    // printf("pNode->pLink : [%p]\n", pNode->pLink);
 
     if(pStack !=NULL ) {
         pNode = (StackNode *)malloc(sizeof(StackNode));
